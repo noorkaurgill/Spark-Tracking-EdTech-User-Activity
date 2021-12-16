@@ -1,0 +1,500 @@
+   12  git pull --all
+   13  sudo apt update
+   14  cd ..
+   15  sudo apt update
+   16  sudo apt install docker-compose
+   17  sudo apt install docker-compose
+   18  mkdir redis-standalone 
+   19  cd ~/w205/redis-standalone
+   20  cp ../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+   21  ls
+   22  docker-compose.yml
+   23  docker-compose up -d
+   24  docker-compose ps
+   25  docker-compose logs redis
+   26  docker-compose down
+   27  docker-compose ps
+   28  cd ..
+   29  mkdir redis-cluster
+   30  cd redis-cluster
+   31  cp ../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml docker --compose.yml
+   32  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml docker-compose.yml
+   33  cd ..
+   34  cd..
+   35  cd w205
+   36  ls
+   37  cd project-1-noorkaurgill
+   38  ls
+   39  git branch
+   40  git checkout project_01
+   41  git commit -m "README changes"
+   42  git add README.md
+   43  git add  example.ipynb
+   44  git status
+   45  git checkout project_01
+   46  git push
+   47  git checkout project_01
+   48  git pull 
+   49  git checkout project_01
+   50  git commit -m "OH:
+   51  "
+   52  git push
+   53  git checkout project_01
+   54  git branch
+   55  git status
+   56  git add ..
+   57  git add .ipynb_checkpoints/
+   58  git add geospatial_items/
+   59  git add result.csv
+   60  git commit -m "Adding external files"
+   61  git push
+   62  git push
+   63  git status
+   64  cd w205
+   65  ls 
+   66  cd project-1-noorkaurgill
+   67  git pull
+   68  git pull
+   69  ls
+   70  git status
+   71  git add Project_1.ipynb
+   72  git commit -m "Part 3"
+   73  git status
+   74  git push
+   75  git push
+   76  git push
+   77  git status
+   78  git add Project_1.ipynb
+   79  git add days_and_subscribers.csv
+   80  git add durations.csv
+   81  git add  monthly_breakdown.csv
+   82  git add result.csv
+   83  git commit -m "Working on it"
+   84  git push
+   85  git status
+   86  git add Project_1.ipynb
+   87  git commit -m "Part 3"
+   88  git push
+   89  git status
+   90  git add Project_1.ipynb
+   91  git add README.md
+   92  git add example.ipynb
+   93  git commit -m "Added README"
+   94  git push
+   95  git status
+   96  git add Project_1.ipynb
+   97  git add README.md
+   98  git commit -m "Added more 1"
+   99  git oush
+  100  git push
+  101  git status
+  102  git add Project_1.ipynb
+  103  git add geospatial_items/tm960wp6354.cst
+  104  git add  geospatial_items/tm960wp6354.cst
+  105  git add geospatial_items/tm960wp6354.prj
+  106  git status
+  107  git add geospatial_items/tm960wp6354.dbf
+  108  git add geospatial_items/tm960wp6354.shp
+  109  git add geospatial_items/tm960wp6354.shx
+  110  git add  geospatial_items/s7gc77.cst
+  111  git status
+  112  git add geospatial_items/s7gc77.dbf
+  113  git add geospatial_items/s7gc77.prj
+  114  git add geospatial_items/s7gc77.shp
+  115  git add geospatial_items/s7gc77.shx
+  116  git add geospatial_items/wfsrequest.txt
+  117  git status
+  118  git commit -m "Done"
+  119  git push
+  120  git status
+  121  git status
+  122  commit -m "Done:
+  123  "
+  124  git push
+  125  ls
+  126  git status
+  127  git add Project_1.ipynb
+  128  git commit -m "Bolded"
+  129  git push
+  130  git push
+  131  git status
+  132  git add
+  133  git add Project_1.ipynb
+  134  git commit -m "Added winter"
+  135  git push
+  136  cd w205
+  137  ls
+  138  cd project-1-noorkaurgill
+  139  ls
+  140  git status
+  141  git add Project_1.ipynb
+  142  git add README.md
+  143  git status
+  144  git commit -m "Submitting Project 1"
+  145  git push
+  146  cat junk.csv | sort | uniq | wc -l
+  147  cd w205
+  148  mkdir kafka
+  149  cp ../course-content/06-Transforming-Data/docker-compose.yml .
+  150  Vim cp ../course-content/06-Transforming-Data/docker-compose.yml .
+  151  cp ../course-content/06-Transforming-Data/docker-compose.yml .
+  152  cd ..
+  153  cd course-content
+  154  cd w205
+  155  cd course-content
+  156  git pull -all
+  157  git pull --all
+  158  git pull -all
+  159  git pull --all
+  160  git pull -all
+  161  git pull --all
+  162  cd w205
+  163  ls
+  164  cd kafka
+  165  ls
+  166  cd ..
+  167  cd ~/w205/course-content
+  168  cd ..
+  169  cd w205
+  170  docker-compose up -d
+  171  cd kafka
+  172  docker-compose up -d
+  173  docker-compose ps
+  174  docker-compose logs zookeeper | grep -i binding
+  175  docker-compose logs kafka | grep -i started
+  176  docker-compose logs kafka | grep -i started
+  177  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  178  ocker-compose exec kafka   kafka-topics     --describe     --topic foo     --zookeeper zookeeper:32181
+  179  docker-compose exec kafka   kafka-topics     --describe     --topic foo     --zookeeper zookeeper:32181
+  180  man seq
+  181  seq 5
+  182  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer "
+  183  docker-compose exec kafka   bash -c "seq 42 | kafka-console-producer \
+  184      --request-required-acks 1 \
+  185      --broker-list localhost:29092 \
+  186      --topic foo && echo 'Produced 42 messages.'"
+  187  docker-compose exec kafka   kafka-console-consumer     --bootstrap-server localhost:29092     --topic foo     --from-beginning     --max-messages 42
+  188  docker-compose down
+  189  docker ps
+  190  ls
+  191  cd w205
+  192  ls
+  193  cat lp_data.csv | wc -1
+  194  cat lp_data.csv | wc -l
+  195  cap lp_data.csv | sort | uniq | sort -n
+  196  cap lp_data.csv | sort | uniq | sort -n^C
+  197  cat lp_data.csv | sort | uniq | sort -n^C
+  198  cat lp_data.csv | sort | uniq | sort -n
+  199  cd kafka
+  200  pwd
+  201  cp ../course-content/06-Transforming-Data/docker-compose.yml .
+  202  ls
+  203  vim docker-compose.yml
+  204  cd w205
+  205  ls
+  206  cd spark-with-kafka
+  207  ls
+  208  docker-compose exec kafka   kafka-topics     --create     --topic foo     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  209  docker-compose exec kafka   kafka-topics   --describe   --topic foo   --zookeeper zookeeper:32181
+  210  docker-compose exec kafka   bash -c "seq 42 | kafka-console-producer \
+  211      --request-required-acks 1 \
+  212      --broker-list kafka:29092 \
+  213      --topic foo && echo 'Produced 42 messages.'"
+  214  ls
+  215  docker-compose exec spark pyspark
+  216  cd w205
+  217  ls
+  218  cd kafka
+  219  vim docker-compose.yml .
+  220  cd w205
+  221  cd kafka
+  222  docker-compose up -d
+  223  docker-compose logs kafka
+  224  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  225  docker-compose logs kafka
+  226  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  227  docker compose down
+  228  docker-compose down
+  229  docker-compose up -d
+  230  docker-compose logs kafka
+  231  docker-compose logs kafka
+  232  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  233  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  234  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json"
+  235  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.'"
+  236  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c"
+  237  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  238  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  239  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  240  docker-compose down
+  241  cd ..
+  242  mkdir spark-with-kafka
+  243  cd spark-with-kafka
+  244  cp /course-content/07-Sourcing-Data/docker-compose.yml .
+  245  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  246  docker-compose up -d
+  247  docker-compose logs -f kafka
+  248  :q
+  249  exit
+  250  cd w205
+  251  ls
+  252  cd spark-with-kafka
+  253  ls
+  254  docker-compose up -d
+  255  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  256  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  257  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list kafka:29092 --topic foo && echo 'Produced 42 messages.'"
+  258  docker-compose exec spark pyspark
+  259  docker compose -down
+  260  docker -compose down
+  261  docker -compose down
+  262  docker --compose down
+  263  docker-compose down
+  264  cd ..
+  265  mkdir ~/w205/spark-with-kafka-and-hdfs
+  266  cd ~/w205/spark-with-kafka-and-hdfs
+  267  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  268  cd ..
+  269  curl -L -o players.json https://goo.gl/vsuCpZ
+  270  ls
+  271  cd spark-with-kafka-and-hdfs
+  272  docker-compose up -d
+  273  docker-compose exec cloudera hadoop fs -ls /tmp/
+  274  docker compose-down
+  275  docker-compose down
+  276  cd w205
+  277  ls
+  278  cd spark-with-kafka
+  279  ls
+  280  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  281  docker-compose up -d
+  282  docker-compose logs -f kafka
+  283  cd w205
+  284  cd spark-with-kafka
+  285  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  286  docker-compose up -d
+  287  docker-compose logs -f kafka
+  288  docker ps
+  289  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  290  docker-compose down
+  291  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  292  docker-compose up -d
+  293  docker-compose logs -f kafka
+  294  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  295  cd w205
+  296  git clone https://github.com/mids-w205-schioberg/project-2-noorkaurgill
+  297  git clone https://github.com/mids-w205-schioberg/project-2-noorkaurgill
+  298  git clone https://github.com/mids-w205-schioberg/project-2-noorkaurgill
+  299  git clone https://github.com/mids-w205-schioberg/project-2-noorkaurgill
+  300  ls
+  301  cd project-2-noorkaurgill
+  302  git branch assignment
+  303  git checkout assignment
+  304  git status
+  305  history > noorkaurgill -history.txt
+  306  history > noorkaurgill-history.txt
+  307  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  308  docker-compose -f docker-compose.yml up
+  309  cd w205
+  310  ls
+  311  cd project-2-noorkaurgill
+  312  ls
+  313  docker compose-down
+  314  docker-compose down
+  315  docker-compose -f docker-compose.yml up
+  316  cd w205
+  317  ls
+  318  cd project-2-noorkaurgill
+  319  ls
+  320  docker-compose down
+  321  docker-compose up -d
+  322   docker-compose logs -f kafka
+  323  cd repo
+  324  cd w205
+  325  ls
+  326  cd project-1-noorkaurgill
+  327  ls
+  328  git status
+  329  git add 
+  330  git add Project_1.ipynb
+  331  git add .ipynb_checkpoints/Project_1-checkpoint.ipynb
+  332  git status
+  333  git commit -m "Making revisions to Project 1 Submission:)"
+  334  git push
+  335  git push
+  336  git push
+  337  cd w205
+  338  ls
+  339  cd project-2-noorkaurgill
+  340  docker-compose down
+  341  docker-compose up -d
+  342  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  343  docker-compose exec kafka   kafka-topics   --describe   --topic assessments   --zookeeper zookeeper:32181
+  344  docker-compose exec spark pyspark
+  345  cd w205
+  346  cd flask-with-kafka
+  347  docker-compose exec mids curl http://localhost:5000/
+  348  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  349  docker-compose exec mids curl http://localhost:5000/
+  350  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  351  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e
+  352  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e
+  353  docker-compose down
+  354  cd w205
+  355  ls
+  356  cd project-2-noorkaurgill
+  357  docker-compose exec mids bash -c “cat /assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  358  docker-compose exec mids bash -c “cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  359  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  360  docker-compose exec mids bash -c cat /assessment-attempts-20180128-121051-nested.json  | jq ‘.[]’ -c  | kafkacat -P -b kafka:29092 -t assessments
+  361  docker-compose exec mids bash -c cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments
+  362  history > noorkaurgill-history.txt
+  363   docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  364  docker-compose exec mids bash -c “cat /assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  365  docker-compose exec mids bash -c “cat /assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  366  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  367  docker-compose exec mids bash -c "cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  368  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  369  docker-compose exec mids bash -c "cat w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  370  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  371  docker-compose ps
+  372  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  373  docker-compose exec mids bash -c "cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  374  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  375  docker-compose exec mids bash -c "cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  376  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  377  docker-compose exec mids bash -c "cat /assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  378  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  379  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  380  ls
+  381  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  382  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  383  cd w205
+  384  ls
+  385  cd project-2-noorkaurgill
+  386  docker-compose down
+  387  history > noorkaurgill-history.txt
+  388  cd w205
+  389  history > noorkaurgill-history.txt
+  390  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  391  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  392  ls
+  393  docker-compose up -d
+  394  docker-compose exec cloudera hadoop fs -ls /tmp/
+  395  docker-compose exec cloudera hadoop fs -ls /tmp/
+  396  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181 
+  397  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  398  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  399  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  400  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  401  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  402  docker-compose exec mids bash -c "cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  403  docker-compose exec mids bash -c "cat /w205/project-2-rebeccagh/assessment-attempts-20180128-121051-nested.json
+  404  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json
+  405  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json
+  406  docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  407  docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  408  docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json"
+  409  docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  410  ls
+  411  docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”docker-compose exec mids bash -c “cat assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”docker-compose exec mids bash -c “cat /assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  412  cd w205
+  413  cd project-2-noorkaurgill
+  414  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  415  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  416  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  417  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  418  docker-compose down
+  419  cd w205
+  420  ls
+  421  cd project-2-noorkaurgill
+  422  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  423  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp`
+  424  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  425  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  426  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  427  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  428  cd w205
+  429  cd project-2-noorkaurgill
+  430  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  431  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  432  ls
+  433  history > noorkaurgill-history.txt
+  434  docker-compose up -d
+  435  docker-compose exec cloudera hadoop fs -ls /tmp/
+  436  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181 
+  437  docker-compose exec mids \ bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json \  | jq '.[]' -c \  | kafkacat -P -b kafka:29092 -t assessments"
+  438  docker-compose exec mids \ bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json \  | jq '.[]' -c \  | kafkacat -P -b kafka:29092 -t assessments"
+  439  ls
+  440  docker-compose logs -f kafka
+  441  cd w205
+  442  ls
+  443  cd project-2-noorkaurgill
+  444  ls
+  445  docker-compose down
+  446  ls
+  447  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  448  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  449  ls
+  450  history > noorkaurgill-history.txt
+  451  docker-compose up -d
+  452  docker-compose exec cloudera hadoop fs -ls /tmp/
+  453  docker-compose exec cloudera hadoop fs -ls /tmp/
+  454  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181 
+  455  docker-compose exec mids \ bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json \  | jq '.[]' -c \  | kafkacat -P -b kafka:29092 -t assessments"
+  456  ls
+  457  docker-compose exec mids   bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json \
+  458      | jq '.[]' -c \
+  459      | kafkacat -P -b kafka:29092 -t assessments"
+  460  docker-compose exec mids \ bash -c cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json \  | jq '.[]' -c \  | kafkacat -P -b kafka:29092 -t assessments
+  461  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  462  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  463  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json  | jq '.[]' -c  | kafkacat -P -b kafka:29092 -t assessments”
+  464  docker-compose exec cloudera hadoop fs -ls /tmp/docker-compose down
+  465  cd w205
+  466  ls
+  467  cd project-2-noorkaurgill 
+  468   docker-compose logs -f kafka
+  469  cd 205
+  470  cd w205
+  471  ls
+  472  cd project-2-noorkaurgill
+  473  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq ‘.[]’ -c | kafkacat -P -b kafka:29092 -t assessments”
+  474  cd w205
+  475  ls
+  476  cd project-2-noorkaurgill
+  477  ls
+  478  history > noorkaurgill -history.txt
+  479  history > noorkaurgill-history.txt
+  480  docker-compose up -d
+  481  docker-compose logs -f kafka
+  482  docker-compose exec kafka   kafka-topics     --create     --topic assessments     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  483  docker-compose exec kafka   kafka-topics     --create     --topic assessments     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  484  cd w205
+  485  cd project-2-noorkaurgill
+  486  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  487  vi docker-compose.yml
+  488  cd w205
+  489  cd project-2-noorkaurgill
+  490  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  491  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/f5bRm4
+  492  ls
+  493  docker-compose up -d
+  494  docker-compose exec cloudera hadoop fs -ls /tmp/
+  495  docker-compose exec cloudera hadoop fs -ls /tmp/
+  496  docker-compose exec kafka kafka-topics --create --topic assessments --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181 
+  497  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  498  docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq “.[]” -c | kafkacat -P -b kafka:29092 -t assessments”
+  499  docker-compose exec cloudera hadoop fs -ls /tmp/docker-compose exec mids bash -c “cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments”
+  500  docker-compose exec spark pyspark
+  501  cd w205
+  502  cd project-2-noorkaurgill
+  503  ls
+  504  docker-compose exec mids bash -c "cat /w205/project-2-noorkaurgill/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  505  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic assessments --from-beginning --max-messages 100
+  506  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t assessments -o beginning -e" | wc -l
+  507  docker-compose exec spark pyspark
+  508  docker-compose exec spark cat /root/.python_history > myspark-history.txt
+  509  docker-compose exec cloudera hadoop fs -ls /tmp/
+  510  docker-compose exec cloudera hadoop fs -ls /tmp/assessments/
+  511  history > noorkaurgill-history.txt
