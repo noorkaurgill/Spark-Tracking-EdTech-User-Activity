@@ -1,4 +1,4 @@
-# Project 2: Tracking User Activity
+# Tracking User Activity
 
 ## Project Summary:
 Through this project, we assume to be working in an edtech firm and are creating a service that delivers assessments such that customers like Pearson want to publisjh their assessments on it. In order to get the data ready for data scientists who work for such customers to run queries on it, we aim to develop a data pipeline by using Kafka to publish and consume messages from a dataset of about 3280 assessments from students in the form of a JSON file in addition to using Spark to transform the messages to land them in Hadoop File Systems. This will prepare the infrastructure to land that data for future queries with tools like SQL and Python. 
